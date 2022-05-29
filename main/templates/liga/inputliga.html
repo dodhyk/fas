@@ -1,0 +1,28 @@
+{% extends "base.html"%}
+{%block title%}Liga{%endblock%}
+
+{%block content%}
+<section class="content">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Masukkan Data Liga Futsal</h3>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="inputNameLiga">Nama Liga</label>
+              <input type="text" id="inputNameLiga" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="inputNameNegara">Negara</label>
+              <select id="inputNameNegara" class="selectpicker countrypicker form-control custom-select"></select>
+            </div>
+            <input type="submit" value="Oke" class="btn btn-success float-right">
+          </div>
+          <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+{%endblock%}

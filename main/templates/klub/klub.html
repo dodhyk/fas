@@ -1,0 +1,60 @@
+{% extends "base.html"%}
+{%block title%}Klub{%endblock%}
+
+{% block content %}
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+            <h3 class="card-title">Daftar Klub</h3>
+
+            <div class="card-tools">
+                <a href="#"><button type="button" class="btn btn-block btn-primary">Tambah Data Klub</button></a>
+            </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body table-responsive p-0">
+            <table class="table table-hover text-nowrap">
+                <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Klub</th>
+                    <th>Base</th>
+                    <th>Status Klub</th>
+                    <th>Aksi</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Black Steel Manokwari</td>
+                    <td>-</td>
+                    <td>Aktif</td>
+                    <td>
+                        <a class="btn btn-app bg-danger">
+                            <i class="fas fa-trash"></i> Hapus
+                        </a>
+                        <a class="btn btn-app bg-success">
+                            <i class="fas fa-edit"></i> Edit
+                        </a>
+                        <a class="btn btn-app bg-primary">
+                            <i class="fas fa-inbox"></i> Detail
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+{% endblock %}

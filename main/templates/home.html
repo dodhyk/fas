@@ -1,0 +1,60 @@
+{% extends "base.html"%}
+{%block title%}Home{%endblock%}
+
+{% block content %}
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+            <h3 class="card-title">Jadwal Pertandingan Futsal</h3>
+
+            <div class="card-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-default">
+                    <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body table-responsive p-0">
+            <table class="table table-hover text-nowrap">
+                <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Home Team</th>
+                    <th>Skor</th>
+                    <th>Away Team</th>
+                    <th>Aksi</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>12/05/2022</td>
+                    <td>Black Steel Manokwari</td>
+                    <td>-</td>
+                    <td>Vamos FC</td>
+                    <td>
+                        <a href="#" class="btn btn-primary active" role="button" aria-pressed="true">Mulai Analisis</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+        </div>
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base.html"%}
+{%block title%}Pemain{%endblock%}
+
+{%block content%}
+<section class="content">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Masukkan Data Pemain</h3>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="inputNamePemain">Nama Pemain</label>
+              <input type="text" id="inputNamePemain" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="inputStatus">Asal Klub</label>
+                <select id="inputStatus" class="form-control custom-select">
+                  <option>Blacksteel Manokwari</option>
+                  <option>Pendekar FC Jakarta</option>
+                  <option>Giga FC Metro</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label>Tanggal Lahir</label>
+                  <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                      <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
+                      <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                      </div>
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="inputStatus">Posisi</label>
+                <select id="inputStatus" class="form-control custom-select">
+                  <option>Kiper</option>
+                  <option>Anchor</option>
+                  <option>Ala</option>
+                  <option>Pivot</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">Foto Pemain</label>
+              <div class="input-group">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="exampleInputFile">
+                  <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                </div>
+                <div class="input-group-append">
+                  <span class="input-group-text">Upload</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputStatus">Status Pemain</label>
+              <select id="inputStatus" class="form-control custom-select">
+                <option selected>-- Pilih Salah Satu --</option>
+                <option>Aktif</option>
+                <option>Pensiun</option>
+              </select>
+            </div>
+            <input type="submit" value="Ubah" class="btn btn-success float-right">
+          </div>
+          <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+{%endblock%}
